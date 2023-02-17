@@ -1,0 +1,12 @@
+/* .logoMainDiv{
+    display: flex;
+    justify-content: space-between;
+} */
+/* @media (min-width: 992px){
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+} */
+.navbar-nav a{
+    font-size: 20px;
+}

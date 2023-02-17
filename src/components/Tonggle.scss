@@ -1,0 +1,65 @@
+.light-theme{
+	--content-color:#212529;
+	--background-color:#F7F5F2;
+	--background-section-color:#ebe7e0;
+	--sun-moon-bg:#000;
+  }
+  .dark-theme{
+	--content-color:#fff;
+	--background-color:linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
+	--background-section-color:#181e27;
+	--sun-moon-bg:#075597;
+  }
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+.one-quarter{
+    padding-top: 12px;
+}
+@media only screen and (max-width: 600px){
+    .one-quarter{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+.label {
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 0px 2px;
+	// background-color: var(--sun-moon-bg) !important;
+	background-color:var(--background-section-color);
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 18px;
+	width: 45px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff ;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 4px;
+	height: 14px;
+	width: 14px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #fff;
+}
+
+.fa-sun {
+	color: #b4ab03;
+}
